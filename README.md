@@ -11,6 +11,7 @@ The FlightsController receives the generated flights through  http calls, valida
 The BL manager receives the data and process it into the app logic.
 While doing so, it is passing the Flight entity to the FlightsRepository in the DAL, which adding it to the database.
 It's a SQL database using SQL server, and entity-framework for code-integration. We created the database using code-first work-flow.
+To unable future modifications in a simple manner the app implement dependency injection using simple injector nuget package. This way all the classes  are connected with loosely coupling approuch. 
 
 ### Prerequisites
 
