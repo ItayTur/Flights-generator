@@ -2,16 +2,17 @@
 
 Flights-generator is an app generating flights and also showing their path in the air-port stations.
 The app is build from 2 clients and 1 server. The clients are Flights-generator and Flights-radar.Flights-generator is a console app.
-It generates flights and send them to the server. Flights-radar is a UWP app. It shows the flights, 
+It generates flights and send them to the server via http calls. Flights-radar is a UWP app. It shows the flights, 
 their movement between the stations and their current positions.
 It is implemented using MVVM pattern. The calls from the server is maid by signalR.
-The server is an ASP.net web-API app for REST Services. It's build with 2 libraries each one act as a separate layer.
+The server is an ASP.net web-API app implementing RESTfull Services. It's build with 2 libraries each one act as a separate layer.
 The libraries are: .net framework library - DAL, .net framework library - BL.
 The FlightsController receives the generated flights through  http calls, validate their data and pass it to the FlightsManager in the BL.
 The BL manager receives the data and process it into the app logic.
 While doing so, it is passing the Flight entity to the FlightsRepository in the DAL, which adding it to the database.
-It's a SQL database using SQL server, and entity-framework for code-integration. We created the database using code-first work-flow.
-To unable future modifications in a simple manner the app implement dependency injection using simple injector nuget package. This way all the classes  are connected with loosely coupling approuch. 
+Any state change like: flight position, flight movement, flight delay ect, is being reflected to the Flights-radar using SignalR nuget-package.
+The app works with SQL database using SQL server, and entity-framework for code-integration. We created the database using code-first work-flow.
+To unable future modifications in a simple manner the app implement dependency injection using SimpleInjector nuget package. This way all the classes  are connected with loosely coupling approuch. 
 
 ### Prerequisites
 
