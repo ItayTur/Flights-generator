@@ -1,0 +1,1 @@
+C:\Users\Naum\Desktop\Home Work\FlightsFinalProject\FlightsGenerator\RadarFlight\FlightsRadar.csproj;x86
