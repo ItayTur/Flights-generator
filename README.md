@@ -15,8 +15,7 @@ To unable future modifications in a simple manner the app implement dependency i
 
 ### Prerequisites
 
-visual studio 2017 
-SQL Server 
+visual studio 2017, SQL Server 
 
 ## Built With
 
