@@ -34,5 +34,3 @@ visual studio 2017, SQL Server
 * [Sela college](https://www.sela.co.il/)
 
 
-
-
