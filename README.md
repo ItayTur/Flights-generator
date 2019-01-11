@@ -16,9 +16,8 @@ To unable future modifications in a simple manner the app implement dependency i
 
 ### Prerequisites
 
-To run the app visual studio 2017 is needed, and windows 10.
+visual studio 2017 
 SQL Server 
-SQL Server Management Studio (SSMS)
 
 ## Built With
 
